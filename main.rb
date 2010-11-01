@@ -1,6 +1,9 @@
 run "rm -Rf .gitignore README public/index.html public/javascripts/* app/views/layouts/*"
 
+gem 'haml'
 gem "haml-rails"
+gem 'tabs_on_rails'
+gem 'jquery-rails'
 # gem 'inherited_resources', '>=1.1.2'
 gem 'will_paginate', '>=3.0.pre2'
 gem 'devise', '>=1.1.2'
@@ -34,7 +37,8 @@ gem "hoptoad_notifier", '>=2.3.6'
 
 # gem 'inploy', '>=1.6.8'
 
-gem 'rails3-generators', :git => "git://github.com/indirect/rails3-generators.git"
+gem 'rails3-generators'
+gem 'cancan'
 
 run "bundle install"
 
