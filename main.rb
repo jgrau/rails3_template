@@ -1,7 +1,5 @@
 run "rm -Rf .gitignore README public/index.html public/javascripts/* app/views/layouts/*"
 
-gem 'rails', '3.0.1'
-gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'inherited_resources'
 gem 'rails3-generators', :group => :development
 
