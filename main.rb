@@ -9,7 +9,7 @@ gem 'cancan'
 gem 'haml'
 gem 'tabs_on_rails'
 gem "breadcrumbs_on_rails"
-gem 'will_paginate', '>=3.0.pre2'
+gem 'will_paginate'
 
 gem "shoulda", :group => :test
 gem "factory_girl_rails", :group => :test
