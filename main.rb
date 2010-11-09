@@ -1,4 +1,4 @@
-run "rm -Rf .gitignore README public/index.html public/javascripts/* app/views/layouts/*"
+run "rm -Rf .gitignore README public/index.html public/javascripts/* app/views/layouts/* app/helpers/*"
 
 gem 'inherited_resources'
 gem 'rails3-generators', :group => :development
@@ -6,7 +6,7 @@ gem 'rails3-generators', :group => :development
 gem 'devise'
 gem 'cancan'
 
-gem 'haml'
+gem 'haml-rails'
 gem 'tabs_on_rails'
 gem "breadcrumbs_on_rails"
 gem 'will_paginate'
@@ -23,10 +23,11 @@ gem 'ruby-prof', :group => :test
 
 get "https://github.com/rails/jquery-ujs/raw/master/src/rails.js", "public/javascripts/jquery.rails.js"
 get "https://github.com/jgrau/rails3_template/raw/master/gitignore" ,".gitignore" 
-get "https://github.com/jgrau/rails3_template/raw/master/styles.css", "app/stylesheets/styles.css"
-get "https://github.com/jgrau/rails3_template/raw/master/print.css", "app/stylesheets/print.css"
-get "https://github.com/jgrau/rails3_template/raw/master/ie.css", "app/stylesheets/ie.css"
+get "https://github.com/jgrau/rails3_template/raw/master/styles.css", "public/stylesheets/styles.css"
+get "https://github.com/jgrau/rails3_template/raw/master/print.css", "public/stylesheets/print.css"
+get "https://github.com/jgrau/rails3_template/raw/master/ie.css", "public/stylesheets/ie.css"
 get "https://github.com/jgrau/rails3_template/raw/master/application.html.haml", "app/views/layouts/application.html.haml"
+get "https://github.com/jgrau/rails3_template/raw/master/application_helper.rb", "app/helpers/application_helper.rb"
 
 git :init
 git :add => '.'
